@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Html Form Demo </title>
+    </head>
+    <body>
+        <form action="practical1.html" method="post" target="_blank" style="margin-right: 300px;">
+            <fieldset>
+                <legend align="center">Student Details:</legend>
+               <label id="lblfname" for="fname">Student FirstName:</label>
+               <input type="text" name="txtfname" id="fname" placeholder="Enter your First Name" pattern="text">
+               <br><br>
+               <label id="lbllname" for="lname">Student LastName:</label>
+               <input type="text" name="txtlname" id="lname" placeholder="Enter your Last Name" pattern="text">
+               <br><br>
+               <label >Enrollment Number:</label>
+               <input type="number" placeholder="eg:190133107007"><br><br>
+               <label id="lbDob" for="Dob">Student Date Of Birth:</label>
+               <input type="date" name="dob" id="Dob" pattern="date"><br><br>
+               <label>Enter Email Address</label>
+               <input type="email" placeholder="Example@gmail.com" pattern=""><br><br>
+               <label>Gender:</label>
+               <input type="radio" id="rdbtnF" value="Female" checked>
+               <input type="radio" id="rdbtnM" value="male">
+               <input type="radio" id="rdbtnT" value="Trans"><br><br>
+               <label for="sldept">Choose Department:</label>
+                <select id="sldept" name="dept">
+                <option value="CE">Computer Engineering</option>
+                <option value="IT">Information Technology</option>
+                <option value="EE">Electronic and Engineering</option>
+                </select><br><br>
+               <label>Choose Semester:</label>
+               <input list="Semester" name="Sem">
+                    <datalist id="Semester">
+                        <option value="Semester1">
+                        <option value="Semester2">
+                        <option value="Semester3">
+                        <option value="Semester4">
+                        <option value="Semester5">
+                        <option value="Semester6">
+                        <option value="Semester7">
+                        <option value="Semester8">      
+                    </datalist><br><br>
+                    <label>Select Subjects:</label><br>
+                    <input type="checkbox" id="lang" name="language" value="language">
+                    <label for="ckk1"> Asp</label><br>
+                    <input type="checkbox" id="ckk1" name="chkasp" value="asp">
+                    <label for="chk2"> PHP</label><br>
+                    <input type="checkbox" id="chk2" name="chkphp" value="php">
+                    <label for="chk3">Javascript </label><br>
+                    <input type="checkbox" id="chk3" name="chkjs" value="js">
+                    <label for="chk4">Mobile Development </label><br><br>
+                   
+                    <label name="Addresss" for="txtarea">Address:</label><br>
+                    <textarea rows="8" cols="20" id="txtarea" name="Addresss" placeholder="Address"></textarea><br><br>
+                    <input type="submit" value="Submit">
+          
+       </fieldset>
+    </form>
+    </body>
+</html>
