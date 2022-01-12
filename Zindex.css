@@ -1,0 +1,40 @@
+    div{
+        border-radius: 10px;;
+    }
+.box{
+    border: 5px solid gold;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    left: 100px;
+    top: 100px;
+}
+.one{
+    position: absolute;
+background-color: aqua;
+height: 100px;
+width: 200px;
+top: 10px;
+left: 10px;;
+z-index:1;
+}
+    div.two{
+        position: relative;
+      background-color: blue;
+      height: 100px;
+      width: 200px;  
+      top: 30px;
+      left: 30px;
+      z-index:3;
+    }
+    .three{
+        position:absolute;
+        background-color: burlywood;
+        height: 100px;
+        width:200px;
+        top:60px;
+        left: 60px;
+        z-index:2;
+        
+    }
+    

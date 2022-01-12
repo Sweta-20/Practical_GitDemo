@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position Demo</title>
+    <style>
+        .divmain{
+            border:4px solid black;
+            height: 1400px;
+        }
+        .divcls{
+            height: 100px;
+            width: 100px;
+            display:inline-block;
+        }
+        #div1{
+            background-color: yellow;
+          /*  absolute position value will change according to their parent.*/
+            position:absolute;
+            top: 50px;
+        }
+        #div2{
+            /* Relative will change their position from their own place*/
+            background-color: red;
+            position: relative;
+            top:90px;
+        }
+        #div3{
+            /*fixed for their place whenever  we will scroll the fixed position is visible to us*/
+            background-color: royalblue;
+            position: fixed;
+        }
+        #div4{
+            /*stick to their position*/
+            background-color: seagreen;
+            position: sticky;
+        }
+        #div5{
+            /*it will remain static no change of place that's why top and left are also not working*/
+            border: 2px solid pink;
+            position: static;
+            top: 70px;
+            left: 80px;
+        }
+    </style>
+</head>
+<body>
+   
+       <div class="divmain" >
+       <div class="divcls" id="div1">
+           <h3>position Absolute</h3>
+       </div>
+       <div class="divcls" id="div2">
+        <h3>position relative</h3>
+       </div>
+       <div class="divcls" id="div3">
+        <h3>position fixed</h3>
+       </div>
+       <div class="divcls" id="div4">
+           <h3>position sticky</h3>
+       </div>
+       <div class="divcls" id="div5">
+        <h3>position static</h3>
+    </div>
+    </div>
+   
+</body>
+</html>

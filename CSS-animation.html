@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animation Demo</title>
+    <style>
+        .container{
+            background-color: pink;
+            height: 300px;
+            width: 400px;
+            transition: width 500px 4s;
+        }
+       
+        .divcls{
+            background-color: purple;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            animation: circle 4s 8s ease-in-out 4 alternate forwards;
+    
+        }
+        .divsubcls{
+            background-color: orange;
+            height: 100px;
+            width: 60px;
+           
+            position: relative;
+            top:40px;
+            left: 60px;
+            animation: radius 5s 5s ease-in-out alternate-reverse backwards;
+        }
+        .divcls2{
+            animation: rect 4s ease-in 6s 6 alternate forwards;
+        }
+        .container:hover{
+            width: 700px;
+            transition-duration:8s;
+            transition-timing-function: ease-in-out;
+            transform-style: preserve-3d;
+            
+           /* animation: name duration timing-function delay iteration-count direction fill-mode;*/
+        }
+        @keyframes circle{
+            to{
+                background-color: sienna;
+            }
+            from{
+                background-color: yellow;
+                transition: ease-in-out;
+                transform-origin: left;
+                transition-property:all;
+                transition-duration: 6s;
+                transform-style: flat;
+            }
+        }
+        @keyframes rect{
+            0%{
+                background-color: yellow;
+                transition-duration: 4s;
+                width: 250px;
+                height: 150px;;
+            }
+            25%{
+                background-color: yellowgreen;
+                transition-duration: 6s;
+                width: 150px;
+                height: 250px;
+            }
+            75%{
+                background-color: red;
+                width: 20px;
+                height: 100px;
+            }
+            100%{
+                background-color: green;
+                width: 100px;
+                height: 20px;
+            }
+        }
+        @keyframes radius{
+            0%{
+                background-color: orangered;
+                width: 30px;
+                border-radius: 30%;
+            }
+            25%{
+                background-color: palegreen;
+                width: 60px;
+                border-radius: 60%;
+            }
+            75%{
+                background-color: paleturquoise;
+                width: 30px;
+                border-radius: 50%;
+                height: 30px;
+            }
+            100%{
+                background-color: rebeccapurple;
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="container">
+            <div class="divcls">
+                <div class="divsubcls"></div>
+            </div>
+            <div class="divcls2">
+
+            </div>
+        </div>
+   
+    
+</body>
+</html>
