@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        .navbar>.container-fluid{
+            display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-content: center;
+    align-items: flex-start;
+        }
+        .container-fluid{
+        width:100%;
+        margin: 0px;;
+    }
+    .form-control {
+        width: 500px;
+    }
+    .clsa1{
+        position: relative;
+        top:-5px;
+        left: 230px;
+        display: flex;
+    
+    
+    flex-direction: column;
+  
+    justify-content: center;
+    }
+    .clsa{
+        position: absolute;
+        bottom: 6px;
+        left: 229px;
+    }
+    .me-2 {
+        margin-left: 15rem;;
+    margin-right: 5rem!important;
+}
+.clsa,.clsa1{
+    justify-content: flex-end;
+    min-width: 137px;
+}
+    </style>
+    
+
+  </head>
+  <body>
+      <!--flipcart Navbar-->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+        <div class="container-fluid">
+            <a href="/" class="clsa1">
+                <img src="../img/10.png" class="img-fluid" width="75">
+            </a>
+            <a href="/" class="clsa" style="color: black;text-decoration-line: none;text-decoration-style: solid;">
+                Explore
+                <span style="color: rgb(235, 235, 5);display: inline;margin-top: -300px;">Plus</span>
+                <img src="../img/11.png" class="img-fluid" width="10">
+            </a>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"><i id="fasearch"
+              class="fa fa-search" style="color:red;"></i>
+              <button class="btn btn-outline-light bg-light" style="color: blue;" type="submit">Login</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
